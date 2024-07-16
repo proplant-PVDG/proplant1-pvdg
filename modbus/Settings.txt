@@ -1,0 +1,32 @@
+{
+  "INVERTER": {
+    "dcCapacity": 66,
+    "prRealRadSetpoint": 1,
+    "prdcRealRadSetpoint": 1,
+    "Module_inseries": 20,
+    "Module_voc": 45.6,
+   "STP110_INV01": {
+    "Module_inseries": 20,
+    "dcCapacity": 110
+   }
+   },
+ "EM": {
+    "dcCapacity": 500,
+    "prRealRadSetpoint": 1,
+    "DG01_EM": {
+      "dcCapacity": 500,
+      "prRealRadSetpoint": 1
+     }
+    },
+"PLANT": {
+      "prRealRadSetpoint": 1,
+      "totalInvertersAcCapacity": 120,
+      "dcCapacity": 100,
+      "dg01Capacity": 500,
+      "dg01MinLoad": 30,
+      "dg01CriticalLoad": 10,
+      "dg01ForceTune": 6,
+      "dg01Threshold": 3,
+      "tuneStep": 1
+     }
+}

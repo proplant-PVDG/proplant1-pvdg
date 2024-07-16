@@ -1,0 +1,19 @@
+log4cplus.appender.STDOUT=log4cplus::ConsoleAppender
+log4cplus.appender.STDOUT.layout=log4cplus::PatternLayout
+log4cplus.appender.STDOUT.layout.ConversionPattern=%h/M3 %D{%Y-%m-%d %X.%q}  %5p {%F:%L} %x : %m%n
+
+log4cplus.appender.R=log4cplus::RollingFileAppender
+log4cplus.appender.R.File=/opt/iplon/var/log/wrprot3.log
+log4cplus.appender.R.layout=log4cplus::PatternLayout
+log4cplus.appender.R.layout.ConversionPattern     =%h/M3 %D{%Y-%m-%d %X.%q} %5p {%F:%L} %x : %m%n
+log4cplus.appender.R.MaxFileSize=200KB
+log4cplus.appender.R.MaxBackupIndex=2
+
+log4cplus.logger.feedTheDog=ERROR
+#log4cplus.logger.valueOfinv_error_flags=TRACE
+
+
+log4cplus.rootLogger=ERROR, R, STDOUT
+log4cplus.logger.serialIn=INFO
+log4cplus.logger.serialOut=INFO
+log4cplus.logger.luawhentimer=INFO
