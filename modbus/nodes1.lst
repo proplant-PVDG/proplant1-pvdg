@@ -1,0 +1,12 @@
+{
+ "cfg":"nodelist",
+ "prt":"modbus",
+ "showUnreached":1,
+ "interPollTime":30,
+ "persistencyMinSaveInterval":600,
+ "postData":"udp:224.0.0.113:25826:127.0.0.1",
+ "nodes":[
+          {"a":"192.168.52.12:502:1",   "type":"SMA_STP110",            "name":"STP110_INV01"}
+          ]
+}
+
